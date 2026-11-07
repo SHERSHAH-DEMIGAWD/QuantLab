@@ -1,0 +1,18 @@
+{
+  "contract_version": 1,
+  "symbol": "SYNTH",
+  "exchange": "SYNTHETIC_US",
+  "currency": "USD",
+  "frequency": "1d",
+  "session_timezone": "America/New_York",
+  "source_kind": "synthetic",
+  "source_name": "QuantLab nine invented daily observations",
+  "adjustment_basis": "unadjusted",
+  "source_reference": "frontend/public/examples/nine_sessions.csv; invented sessions and prices",
+  "usage_note": "Project-authored synthetic input; no historical market observations",
+  "ohlc_basis_consistent": true,
+  "volume_basis": "raw",
+  "split_status": "none_reported",
+  "split_evidence": "Invented event-free example; no assertion about a real security",
+  "session_coverage": "unknown"
+}

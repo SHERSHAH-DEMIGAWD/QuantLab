@@ -1,0 +1,8 @@
+---
+description: Apply QuantLab's phase limits and persistent project guidance
+alwaysApply: true
+---
+
+Read and follow `AGENTS.md` at the repository root before making changes.
+Use `docs/PROJECT_STATUS.md` and the user's explicit authorization to determine
+the current phase. Never infer permission from the roadmap alone.

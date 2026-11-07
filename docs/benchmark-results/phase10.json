@@ -1,0 +1,224 @@
+{
+  "recorded_utc": "2026-11-02T19:30:25.735049+00:00",
+  "python": "3.15.0 (tags/v3.15.0:d220409, Oct  9 2026, 11:55:56) [MSC v.1951 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+  "logical_processors": 24,
+  "sqlite": "3.53.4",
+  "repeats": 5,
+  "untimed_warmups_per_operation": 1,
+  "timer": "time.perf_counter_ns; GC enabled; cached local inputs; no concurrent benchmark jobs",
+  "capital_usd": "10000.00",
+  "commission_per_fill_usd": "0.50",
+  "slippage_bps": "5",
+  "strategy": "SMA(5,20)",
+  "grid": "SMA fast=[5,10], slow=[20,40], plus buy-and-hold reference (5 runs)",
+  "source_snapshot_sha256": "44bb44075e15045d513f2fe1125fd3da8670bf35577f4dfeefa20d027ada65bb",
+  "script_sha256": "93a5ba530791b30b6645cea489d31170d48ef016cd76c2ecb5056482d38959e7",
+  "results": [
+    {
+      "bars": 250,
+      "csv_bytes": 11521,
+      "dataset_id": "e181f53f0c829ac89ca10c21fdcfd188b2636c460f7654c22d60ca822725c24d",
+      "source_sha256": "d53ef9e924f4f810e837b519208370dbb78ba2afbaa141197a5bd197c6848ad0",
+      "operations": {
+        "import_validate": {
+          "samples_ns": [
+            3218100,
+            3083400,
+            3708600,
+            3150900,
+            3076400
+          ],
+          "median_ms": 3.1509,
+          "min_ms": 3.0764,
+          "max_ms": 3.7086
+        },
+        "sma_simulation": {
+          "samples_ns": [
+            5316900,
+            5091900,
+            3359600,
+            3274400,
+            4022900
+          ],
+          "median_ms": 4.0229,
+          "min_ms": 3.2744,
+          "max_ms": 5.3169
+        },
+        "grid_with_analytics_audit": {
+          "samples_ns": [
+            59812500,
+            57224900,
+            58613400,
+            61003100,
+            62139600
+          ],
+          "median_ms": 59.8125,
+          "min_ms": 57.2249,
+          "max_ms": 62.1396
+        },
+        "audit_with_source_no_replay": {
+          "samples_ns": [
+            5650000,
+            5430100,
+            7778600,
+            5056100,
+            5239300
+          ],
+          "median_ms": 5.4301,
+          "min_ms": 5.0561,
+          "max_ms": 7.7786
+        },
+        "sqlite_retrieval": {
+          "samples_ns": [
+            2687900,
+            2627600,
+            2731500,
+            2543400,
+            3700400
+          ],
+          "median_ms": 2.6879,
+          "min_ms": 2.5434,
+          "max_ms": 3.7004
+        }
+      }
+    },
+    {
+      "bars": 1000,
+      "csv_bytes": 45992,
+      "dataset_id": "32a738cbfddf174f5fbc840cac68d9cbb0906d9e77dfde879b5fa34f04acad0c",
+      "source_sha256": "848847d5d4e9e4e04926f2183d9da72b8d2599fd5adc7b27d1b91c68568d6b42",
+      "operations": {
+        "import_validate": {
+          "samples_ns": [
+            15320400,
+            12483800,
+            12317700,
+            12189500,
+            12988600
+          ],
+          "median_ms": 12.4838,
+          "min_ms": 12.1895,
+          "max_ms": 15.3204
+        },
+        "sma_simulation": {
+          "samples_ns": [
+            13584500,
+            14083700,
+            13306200,
+            15159000,
+            13733900
+          ],
+          "median_ms": 13.7339,
+          "min_ms": 13.3062,
+          "max_ms": 15.159
+        },
+        "grid_with_analytics_audit": {
+          "samples_ns": [
+            239383400,
+            232676200,
+            236127500,
+            251686200,
+            288493400
+          ],
+          "median_ms": 239.3834,
+          "min_ms": 232.6762,
+          "max_ms": 288.4934
+        },
+        "audit_with_source_no_replay": {
+          "samples_ns": [
+            30829000,
+            27648500,
+            28489400,
+            30626100,
+            30439400
+          ],
+          "median_ms": 30.4394,
+          "min_ms": 27.6485,
+          "max_ms": 30.829
+        },
+        "sqlite_retrieval": {
+          "samples_ns": [
+            11244500,
+            11654800,
+            10562700,
+            11349700,
+            11832100
+          ],
+          "median_ms": 11.3497,
+          "min_ms": 10.5627,
+          "max_ms": 11.8321
+        }
+      }
+    },
+    {
+      "bars": 5000,
+      "csv_bytes": 229832,
+      "dataset_id": "5a6ae681cf79b33b559ec0321ddfca9dbe96081d6425861310eddcb1d05005b8",
+      "source_sha256": "e92e4d881b2d433c39131c68aadeaa5c5ac43b1727898eda796a4bed7ac30999",
+      "operations": {
+        "import_validate": {
+          "samples_ns": [
+            89498100,
+            92445900,
+            82268400,
+            96093600,
+            98032000
+          ],
+          "median_ms": 92.4459,
+          "min_ms": 82.2684,
+          "max_ms": 98.032
+        },
+        "sma_simulation": {
+          "samples_ns": [
+            147363500,
+            107929600,
+            97512200,
+            104761500,
+            102845100
+          ],
+          "median_ms": 104.7615,
+          "min_ms": 97.5122,
+          "max_ms": 147.3635
+        },
+        "grid_with_analytics_audit": {
+          "samples_ns": [
+            1286457500,
+            1410431500,
+            1405938200,
+            1291182200,
+            1199503200
+          ],
+          "median_ms": 1291.1822,
+          "min_ms": 1199.5032,
+          "max_ms": 1410.4315
+        },
+        "audit_with_source_no_replay": {
+          "samples_ns": [
+            151861500,
+            146907600,
+            152772600,
+            152315300,
+            149525100
+          ],
+          "median_ms": 151.8615,
+          "min_ms": 146.9076,
+          "max_ms": 152.7726
+        },
+        "sqlite_retrieval": {
+          "samples_ns": [
+            48517800,
+            48142800,
+            51623600,
+            51416200,
+            52553500
+          ],
+          "median_ms": 51.4162,
+          "min_ms": 48.1428,
+          "max_ms": 52.5535
+        }
+      }
+    }
+  ]
+}

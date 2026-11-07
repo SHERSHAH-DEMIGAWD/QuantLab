@@ -1,0 +1,18 @@
+{
+  "contract_version": 1,
+  "symbol": "SYNTH",
+  "exchange": "SYNTHETIC_US",
+  "currency": "USD",
+  "frequency": "1d",
+  "session_timezone": "America/New_York",
+  "source_kind": "synthetic",
+  "source_name": "QuantLab deterministic invented example",
+  "adjustment_basis": "unadjusted",
+  "source_reference": "backend/tests/fixtures/synthetic_daily.csv; invented daily OHLCV",
+  "usage_note": "Project-authored synthetic test data; no market observations",
+  "ohlc_basis_consistent": true,
+  "volume_basis": "raw",
+  "split_status": "none_reported",
+  "split_evidence": "Invented event-free fixture; not a statement about a real security",
+  "session_coverage": "unknown"
+}

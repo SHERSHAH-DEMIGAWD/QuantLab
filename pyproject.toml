@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantlab"
+version = "0.1.0"
+description = "Strict daily OHLCV ingestion and deterministic execution for QuantLab"
+requires-python = ">=3.12"
+dependencies = ["fastapi==0.162.0", "pydantic==2.14.2", "starlette==1.10.0", "uvicorn==0.54.0"]
+
+[project.optional-dependencies]
+test = ["pytest==9.2.0", "httpx2==2.16.0"]
+
+[tool.setuptools.packages.find]
+where = ["backend/src"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["backend/src"]
+addopts = "-ra"

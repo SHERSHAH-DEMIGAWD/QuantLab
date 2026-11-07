@@ -1,0 +1,18 @@
+{
+  "contract_version": 1,
+  "symbol": "REPLACE_ME",
+  "exchange": "REPLACE_ME",
+  "currency": "USD",
+  "frequency": "1d",
+  "session_timezone": "America/New_York",
+  "source_kind": "local_file",
+  "source_name": "REPLACE_ME",
+  "adjustment_basis": "unknown",
+  "source_reference": "unknown",
+  "usage_note": "unknown",
+  "ohlc_basis_consistent": "unknown",
+  "volume_basis": "unknown",
+  "split_status": "unknown",
+  "split_evidence": "unknown",
+  "session_coverage": "unknown"
+}

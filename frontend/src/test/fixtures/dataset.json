@@ -1,0 +1,47 @@
+{
+  "dataset_id": "b5b90b5803f25a898b83079c9b35ed906066f9ba21d826fe99610fbb45b59c79",
+  "metadata": {
+    "adjustment_basis": "unadjusted",
+    "contract_version": 1,
+    "currency": "USD",
+    "exchange": "SYNTHETIC_US",
+    "frequency": "1d",
+    "ohlc_basis_consistent": true,
+    "session_coverage": "unknown",
+    "session_timezone": "America/New_York",
+    "source_kind": "synthetic",
+    "source_name": "QuantLab nine invented daily observations",
+    "source_reference": "frontend/public/examples/nine_sessions.csv; invented sessions and prices",
+    "split_evidence": "Invented event-free example; no assertion about a real security",
+    "split_status": "none_reported",
+    "symbol": "SYNTH",
+    "usage_note": "Project-authored synthetic input; no historical market observations",
+    "volume_basis": "raw"
+  },
+  "validation": {
+    "calendar_gaps": [],
+    "coverage_assessment": "unverified",
+    "dataset_id": "b5b90b5803f25a898b83079c9b35ed906066f9ba21d826fe99610fbb45b59c79",
+    "first_date": "2024-01-01",
+    "importer_version": "1.0.0",
+    "last_date": "2024-01-09",
+    "metadata_sha256": "9560f0404fd837c8a90df2d0902d6ebec222a8fd549240be6aa7fea0d8eb3e8a",
+    "normalization": {
+      "csv_bom_removed": false,
+      "rows_reordered": false,
+      "whitespace_fields_trimmed": 0
+    },
+    "row_count": 9,
+    "source_byte_count": 273,
+    "source_sha256": "a36e4ed63e20c1346200676941cfee376b82a284eea4f4316bb42f2e857ab158",
+    "warnings": [
+      "Session coverage is unverified; calendar gaps do not identify missing trading sessions.",
+      "Source, usage, adjustment and corporate-action declarations are not independently verified.",
+      "Import acceptance does not establish simulation eligibility; no split or dividend processing is performed.",
+      "Synthetic observations are invented, not historical market observations."
+    ],
+    "zero_volume_rows": 0
+  },
+  "created_at": "2026-11-02T14:16:03.989059+00:00",
+  "duplicate": false
+}

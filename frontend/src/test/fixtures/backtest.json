@@ -1,0 +1,1508 @@
+{
+  "experiment_id": "cfbe8f20c7ef4d2288009eb9a3938972",
+  "dataset_id": "b5b90b5803f25a898b83079c9b35ed906066f9ba21d826fe99610fbb45b59c79",
+  "mode": "backtest",
+  "request": {
+    "request_version": 1,
+    "dataset_id": "b5b90b5803f25a898b83079c9b35ed906066f9ba21d826fe99610fbb45b59c79",
+    "mode": "backtest",
+    "initial_capital": "1000.00",
+    "configurations": [
+      {
+        "kind": "buy_and_hold"
+      }
+    ],
+    "settings": {
+      "commission_per_fill_usd": "0.00",
+      "slippage_bps": "0",
+      "acknowledge_unverified_coverage": false
+    },
+    "periods": null,
+    "costs": null,
+    "training_period": null,
+    "test_period": null,
+    "warmup": true,
+    "include_benchmark": true,
+    "annual_risk_free_rate": "0"
+  },
+  "result": {
+    "experiment_type": "fixed_reference",
+    "experiment_version": "1.0.0",
+    "dataset_id": "b5b90b5803f25a898b83079c9b35ed906066f9ba21d826fe99610fbb45b59c79",
+    "configurations": [
+      {}
+    ],
+    "periods": [
+      {
+        "start_date": "2024-01-01",
+        "end_date": "2024-01-09"
+      }
+    ],
+    "costs": [
+      {
+        "commission_per_fill_usd": "0.00",
+        "slippage_bps": "0"
+      }
+    ],
+    "runs": [
+      {
+        "run_id": "run_001",
+        "phase": "evaluation",
+        "role": "candidate",
+        "requested_period": {
+          "start_date": "2024-01-01",
+          "end_date": "2024-01-09"
+        },
+        "performance": {
+          "simulation": {
+            "engine_version": "1.3.0",
+            "dataset_id": "b5b90b5803f25a898b83079c9b35ed906066f9ba21d826fe99610fbb45b59c79",
+            "source_sha256": "a36e4ed63e20c1346200676941cfee376b82a284eea4f4316bb42f2e857ab158",
+            "metadata_sha256": "9560f0404fd837c8a90df2d0902d6ebec222a8fd549240be6aa7fea0d8eb3e8a",
+            "metadata": {
+              "contract_version": 1,
+              "symbol": "SYNTH",
+              "exchange": "SYNTHETIC_US",
+              "currency": "USD",
+              "frequency": "1d",
+              "session_timezone": "America/New_York",
+              "source_kind": "synthetic",
+              "source_name": "QuantLab nine invented daily observations",
+              "adjustment_basis": "unadjusted",
+              "source_reference": "frontend/public/examples/nine_sessions.csv; invented sessions and prices",
+              "usage_note": "Project-authored synthetic input; no historical market observations",
+              "ohlc_basis_consistent": true,
+              "volume_basis": "raw",
+              "split_status": "none_reported",
+              "split_evidence": "Invented event-free example; no assertion about a real security",
+              "session_coverage": "unknown"
+            },
+            "start_date": "2024-01-01",
+            "end_date": "2024-01-09",
+            "initial_capital": "1000.00",
+            "settings": {
+              "start_date": "2024-01-01",
+              "end_date": "2024-01-09",
+              "commission_per_fill_usd": "0.00",
+              "slippage_bps": "0",
+              "acknowledge_unverified_coverage": false,
+              "sell_after_session": null,
+              "warmup_start_date": null,
+              "warmup_end_date": null
+            },
+            "strategy": {},
+            "final_cash": "0.00",
+            "final_shares": 100,
+            "final_equity": "800.00",
+            "realized_pnl": "0.00",
+            "unrealized_pnl": "-200.00",
+            "valuations": [
+              {
+                "session": "2024-01-01",
+                "cash": "1000.00",
+                "shares": 0,
+                "close": "10",
+                "market_value": "0",
+                "equity": "1000.00",
+                "cost_basis": "0.00",
+                "realized_pnl": "0.00",
+                "unrealized_pnl": "0.00"
+              },
+              {
+                "session": "2024-01-02",
+                "cash": "0.00",
+                "shares": 100,
+                "close": "12",
+                "market_value": "1200",
+                "equity": "1200.00",
+                "cost_basis": "1000.00",
+                "realized_pnl": "0.00",
+                "unrealized_pnl": "200.00"
+              },
+              {
+                "session": "2024-01-03",
+                "cash": "0.00",
+                "shares": 100,
+                "close": "11",
+                "market_value": "1100",
+                "equity": "1100.00",
+                "cost_basis": "1000.00",
+                "realized_pnl": "0.00",
+                "unrealized_pnl": "100.00"
+              },
+              {
+                "session": "2024-01-04",
+                "cash": "0.00",
+                "shares": 100,
+                "close": "15",
+                "market_value": "1500",
+                "equity": "1500.00",
+                "cost_basis": "1000.00",
+                "realized_pnl": "0.00",
+                "unrealized_pnl": "500.00"
+              },
+              {
+                "session": "2024-01-05",
+                "cash": "0.00",
+                "shares": 100,
+                "close": "16",
+                "market_value": "1600",
+                "equity": "1600.00",
+                "cost_basis": "1000.00",
+                "realized_pnl": "0.00",
+                "unrealized_pnl": "600.00"
+              },
+              {
+                "session": "2024-01-06",
+                "cash": "0.00",
+                "shares": 100,
+                "close": "20",
+                "market_value": "2000",
+                "equity": "2000.00",
+                "cost_basis": "1000.00",
+                "realized_pnl": "0.00",
+                "unrealized_pnl": "1000.00"
+              },
+              {
+                "session": "2024-01-07",
+                "cash": "0.00",
+                "shares": 100,
+                "close": "22",
+                "market_value": "2200",
+                "equity": "2200.00",
+                "cost_basis": "1000.00",
+                "realized_pnl": "0.00",
+                "unrealized_pnl": "1200.00"
+              },
+              {
+                "session": "2024-01-08",
+                "cash": "0.00",
+                "shares": 100,
+                "close": "10",
+                "market_value": "1000",
+                "equity": "1000.00",
+                "cost_basis": "1000.00",
+                "realized_pnl": "0.00",
+                "unrealized_pnl": "0.00"
+              },
+              {
+                "session": "2024-01-09",
+                "cash": "0.00",
+                "shares": 100,
+                "close": "8",
+                "market_value": "800",
+                "equity": "800.00",
+                "cost_basis": "1000.00",
+                "realized_pnl": "0.00",
+                "unrealized_pnl": "-200.00"
+              }
+            ],
+            "decisions": [
+              {
+                "session": "2024-01-01",
+                "target": "LONG",
+                "cash": "1000.00",
+                "shares": 0
+              },
+              {
+                "session": "2024-01-02",
+                "target": "HOLD",
+                "cash": "0.00",
+                "shares": 100
+              },
+              {
+                "session": "2024-01-03",
+                "target": "HOLD",
+                "cash": "0.00",
+                "shares": 100
+              },
+              {
+                "session": "2024-01-04",
+                "target": "HOLD",
+                "cash": "0.00",
+                "shares": 100
+              },
+              {
+                "session": "2024-01-05",
+                "target": "HOLD",
+                "cash": "0.00",
+                "shares": 100
+              },
+              {
+                "session": "2024-01-06",
+                "target": "HOLD",
+                "cash": "0.00",
+                "shares": 100
+              },
+              {
+                "session": "2024-01-07",
+                "target": "HOLD",
+                "cash": "0.00",
+                "shares": 100
+              },
+              {
+                "session": "2024-01-08",
+                "target": "HOLD",
+                "cash": "0.00",
+                "shares": 100
+              },
+              {
+                "session": "2024-01-09",
+                "target": "HOLD",
+                "cash": "0.00",
+                "shares": 100
+              }
+            ],
+            "orders": [
+              {
+                "order_id": 1,
+                "decision_session": "2024-01-01",
+                "eligible_session": "2024-01-02",
+                "target": "LONG",
+                "side": "BUY",
+                "budget": "1000.00",
+                "requested_shares": null,
+                "status": "FILLED",
+                "outcome_session": "2024-01-02",
+                "reason": null,
+                "base_open": "10",
+                "effective_price": "10.000000"
+              }
+            ],
+            "fills": [
+              {
+                "order_id": 1,
+                "session": "2024-01-02",
+                "side": "BUY",
+                "quantity": 100,
+                "base_open": "10",
+                "effective_price": "10.000000",
+                "notional": "1000.00",
+                "fee": "0.00",
+                "cash_change": "-1000.00"
+              }
+            ],
+            "assumptions": [
+              "Price-return simulation excluding dividends; not total shareholder return.",
+              "One instrument, USD, daily bars, integer shares, long-only, no leverage or external cash flows.",
+              "Decisions occur after the close; budgeted buys/full-position sells execute at the next observed open.",
+              "Buy quantity is floor((reserved cash - rounded commission) / effective open); rounded-debit affordability is rechecked.",
+              "Flat commission and adverse slippage follow recorded settings; only fills incur fees; no partial fills or automatic retries.",
+              "Costs are simplified research assumptions, not a brokerage fee or opening-liquidity guarantee.",
+              "Buy-and-hold may produce a fresh LONG intent at a rejected buy session's close; invested buy-and-hold holds.",
+              "Zero-volume execution rejects the order; positive daily volume does not establish opening liquidity.",
+              "Decimal precision 28; fill prices use six decimals, cash/notionals cents, ROUND_HALF_UP; marks are unrounded.",
+              "Sale proceeds are immediately available; brokerage settlement restrictions are not modeled.",
+              "Final holdings remain open; final-session pending orders expire without a fill or fee.",
+              "No splits, dividends, reinvestment, interest, taxes, symbol changes, or delisting proceeds are modeled.",
+              "Metadata declarations are assertions, not independently verified market facts or completeness evidence."
+            ],
+            "warnings": [
+              "Session coverage is unverified; calendar gaps do not identify missing trading sessions.",
+              "Source, usage, adjustment and corporate-action declarations are not independently verified.",
+              "Import acceptance does not establish simulation eligibility; no split or dividend processing is performed.",
+              "Synthetic observations are invented, not historical market observations.",
+              "Next observed session is a proxy for next tradable session; coverage and opening liquidity remain unverified.",
+              "Split declarations cover the supplied dataset interval; no event is bypassed by selecting a subwindow."
+            ],
+            "warmup_start": null,
+            "warmup_end": null,
+            "warmup_bars": 0
+          },
+          "equity": {
+            "daily_returns": [
+              {
+                "session": "2024-01-02",
+                "metric": {
+                  "value": 0.2,
+                  "reason": null
+                }
+              },
+              {
+                "session": "2024-01-03",
+                "metric": {
+                  "value": -0.08333333333333333,
+                  "reason": null
+                }
+              },
+              {
+                "session": "2024-01-04",
+                "metric": {
+                  "value": 0.36363636363636365,
+                  "reason": null
+                }
+              },
+              {
+                "session": "2024-01-05",
+                "metric": {
+                  "value": 0.06666666666666667,
+                  "reason": null
+                }
+              },
+              {
+                "session": "2024-01-06",
+                "metric": {
+                  "value": 0.25,
+                  "reason": null
+                }
+              },
+              {
+                "session": "2024-01-07",
+                "metric": {
+                  "value": 0.1,
+                  "reason": null
+                }
+              },
+              {
+                "session": "2024-01-08",
+                "metric": {
+                  "value": -0.5454545454545454,
+                  "reason": null
+                }
+              },
+              {
+                "session": "2024-01-09",
+                "metric": {
+                  "value": -0.2,
+                  "reason": null
+                }
+              }
+            ],
+            "cumulative_return": {
+              "value": -0.2,
+              "reason": null
+            },
+            "annualized_return": {
+              "value": -0.9999623771042997,
+              "reason": null
+            },
+            "maximum_drawdown": {
+              "value": 0.6363636363636364,
+              "reason": null
+            },
+            "annualized_volatility": {
+              "value": 4.611699100661417,
+              "reason": null
+            },
+            "sharpe_ratio": {
+              "value": 1.0349173197450725,
+              "reason": null
+            },
+            "annual_risk_free_rate": "0",
+            "annualization_extrapolated": true,
+            "assumptions": [
+              "Return values are fractions, not percentages; input closing equity is not display-rounded.",
+              "Consecutive observed closes only; no artificial first zero return or silent removal of undefined returns.",
+              "Annual return uses elapsed calendar days and 365.25; sample volatility and Sharpe use 252 sessions/year.",
+              "Exact equity ratios convert to float for statistics/powers; trade and cash accounting remain Decimal.",
+              "Sharpe uses a constant effective annual risk-free rate converted by (1+rf)^(1/252)-1.",
+              "These are price-return statistics excluding dividends; they do not establish significance or predictability."
+            ],
+            "warnings": [
+              "Annualized return over less than 365.25 calendar days is extrapolation."
+            ]
+          },
+          "trades": {
+            "closed_trades": [],
+            "closed_trade_count": 0,
+            "winning_trades": 0,
+            "losing_trades": 0,
+            "break_even_trades": 0,
+            "win_rate": {
+              "value": null,
+              "reason": "no_closed_trades"
+            },
+            "mean_net_pnl": {
+              "value": null,
+              "reason": "no_closed_trades"
+            },
+            "open_position": {
+              "entry_order_id": 1,
+              "entry_session": "2024-01-02",
+              "quantity": 100,
+              "entry_debit": "1000.00",
+              "last_close": "8",
+              "market_value": "800",
+              "unrealized_pnl": "-200.00"
+            }
+          }
+        },
+        "audit": {
+          "audit_version": "1.1.0",
+          "dataset_id": "b5b90b5803f25a898b83079c9b35ed906066f9ba21d826fe99610fbb45b59c79",
+          "findings": [
+            {
+              "rule_id": "DATA.RECORDED_IDENTITY",
+              "title": "Recorded identity consistency",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Checked retained hash syntax and canonical effective-metadata/dataset identity relationships; no original bytes or source authenticity are implied.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Checked retained hash syntax and canonical effective-metadata/dataset identity relationships; no original bytes or source authenticity are implied.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "DATA.INPUT_MATCH",
+              "title": "Supporting dataset matches result",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Compared supporting Dataset identity/metadata and report count/endpoints; this alone does not reverify its original rows.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Compared supporting Dataset identity/metadata and report count/endpoints; this alone does not reverify its original rows.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "DATA.SOURCE_SHA256",
+              "title": "Exact source-byte hash",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "Original CSV bytes were not supplied.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "Original CSV bytes were not supplied.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "DATA.ORIGINAL_IDENTITY",
+              "title": "Original input fingerprints",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "Both original CSV bytes and separately supplied effective Metadata are required; a stored dataset ID is not source reverification.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "Both original CSV bytes and separately supplied effective Metadata are required; a stored dataset ID is not source reverification.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "DATA.ORIGINAL_ROWS",
+              "title": "Original CSV rows match retained data",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "Original CSV bytes were not supplied; hashes cannot reconstruct or validate rows.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "Original CSV bytes were not supplied; hashes cannot reconstruct or validate rows.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "DATA.SOURCE_SEQUENCE",
+              "title": "Usable source session sequence",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Checked 9 supplied bars; selected 9 by recorded settings. This does not establish exchange-session completeness.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Checked 9 supplied bars; selected 9 by recorded settings. This does not establish exchange-session completeness.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "ORDERS.LIFECYCLE",
+              "title": "Order and fill lifecycle",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Checked 1 orders/1 fills and their recorded decisions; no event history is inferred.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Checked 1 orders/1 fills and their recorded decisions; no event history is inferred.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "TIMING.CAUSALITY",
+              "title": "Recorded decision precedes execution",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Checked recorded decision/outcome/eligibility chronology only; this is not proof against arbitrary strategy look-ahead.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Checked recorded decision/outcome/eligibility chronology only; this is not proof against arbitrary strategy look-ahead.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "TIMING.NEXT_SESSION",
+              "title": "Next observed session",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Compared against selected source dates, not next-calendar-day arithmetic; source completeness remains unverified.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Compared against selected source dates, not next-calendar-day arithmetic; source completeness remains unverified.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "TIMING.WARMUP",
+              "title": "Indicator-only warm-up boundaries",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "No indicator-only warm-up was requested.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "No indicator-only warm-up was requested.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "ACCOUNTING.BALANCES",
+              "title": "Portfolio balances and terminal state",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Checked nonnegative cents cash/integer holdings, exact mark/equity/unrealized P&L, and terminal equality.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Checked nonnegative cents cash/integer holdings, exact mark/equity/unrealized P&L, and terminal equality.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "ACCOUNTING.LEDGER",
+              "title": "Cash and position ledger",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Folded recorded full fills from initial flat cash using notional plus/minus fee; reconciled each close and decision state, without generating signals/orders.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Folded recorded full fills from initial flat cash using notional plus/minus fee; reconciled each close and decision state, without generating signals/orders.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "COSTS.CONFIGURATION",
+              "title": "Retained supported cost settings",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Checked presence, finite nonnegative Decimal, precision and supported commission/bps ranges; this does not establish the original request.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Checked presence, finite nonnegative Decimal, precision and supported commission/bps ranges; this does not establish the original request.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "COSTS.FILL_MATH",
+              "title": "Declared cost arithmetic",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Independently applied six-decimal slipped prices and cents notional/fees with precision 28/ROUND_HALF_UP to recorded base opens; no production cost helper called.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Independently applied six-decimal slipped prices and cents notional/fees with precision 28/ROUND_HALF_UP to recorded base opens; no production cost helper called.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "DATA.PRICE_REFERENCES",
+              "title": "Execution and mark source references",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Compared attempted/filled opens and closing marks with supplied source bars; positive daily volume does not prove opening liquidity.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Compared attempted/filled opens and closing marks with supplied source bars; positive daily volume does not prove opening liquidity.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "COSTS.REQUEST_MATCH",
+              "title": "Retained settings match original request",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Compared the complete result settings with separately supplied original request settings.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Compared the complete result settings with separately supplied original request settings.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "COSTS.UNFILLED",
+              "title": "No unfilled-order cash charges",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Checked absence of fills on rejected/expired orders and a fully reconciled cash ledger.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Checked absence of fills on rejected/expired orders and a fully reconciled cash ledger.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "DATA.ELIGIBILITY",
+              "title": "Declared execution eligibility",
+              "status": "PASS",
+              "severity": null,
+              "explanation": "Checked required D04 declarations and real-data coverage acknowledgment; no declaration is independent proof of its historical truth.",
+              "evidence": [
+                {
+                  "reference": "check_scope",
+                  "observed": "Checked required D04 declarations and real-data coverage acknowledgment; no declaration is independent proof of its historical truth.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "DATA.PROVENANCE",
+              "title": "Source provenance declarations",
+              "status": "WARNING",
+              "severity": "WARNING",
+              "explanation": "These source/rights/adjustment/split declarations are assertions, not independently verified historical market facts; synthetic observations are invented when so labeled.",
+              "evidence": [
+                {
+                  "reference": "metadata.source_kind",
+                  "observed": "'synthetic'",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "metadata.source_name",
+                  "observed": "'QuantLab nine invented daily observations'",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "metadata.source_reference",
+                  "observed": "'frontend/public/examples/nine_sessions.csv; invented sessions and prices'",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "metadata.usage_note",
+                  "observed": "'Project-authored synthetic input; no historical market observations'",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "metadata.adjustment_basis",
+                  "observed": "'unadjusted'",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "metadata.split_status",
+                  "observed": "'none_reported'",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "metadata.split_evidence",
+                  "observed": "'Invented event-free example; no assertion about a real security'",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "metadata.session_coverage",
+                  "observed": "'unknown'",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": "Retain source evidence and investigate unknown or unreliable declarations."
+            },
+            {
+              "rule_id": "DATA.LIMITATIONS",
+              "title": "Financial data and model limitations",
+              "status": "WARNING",
+              "severity": "WARNING",
+              "explanation": "Session coverage is unverified; calendar gaps do not establish missing sessions. Splits/corporate actions are not processed, dividends/total shareholder return are excluded, and opening liquidity is not established.",
+              "evidence": [
+                {
+                  "reference": "coverage_assessment",
+                  "observed": "unverified; no authoritative calendar supplied",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "retained_warnings[0]",
+                  "observed": "Session coverage is unverified; calendar gaps do not identify missing trading sessions.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "retained_warnings[1]",
+                  "observed": "Source, usage, adjustment and corporate-action declarations are not independently verified.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "retained_warnings[2]",
+                  "observed": "Import acceptance does not establish simulation eligibility; no split or dividend processing is performed.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "retained_warnings[3]",
+                  "observed": "Synthetic observations are invented, not historical market observations.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "retained_warnings[4]",
+                  "observed": "Next observed session is a proxy for next tradable session; coverage and opening liquidity remain unverified.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                },
+                {
+                  "reference": "retained_warnings[5]",
+                  "observed": "Split declarations cover the supplied dataset interval; no event is bypassed by selecting a subwindow.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": "Investigate source coverage/actions/liquidity before interpreting price-return results."
+            },
+            {
+              "rule_id": "REPRODUCIBILITY.REPLAY",
+              "title": "Exact current-engine replay",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "Replay was not requested; identity/hash checks alone do not establish simulation reproducibility.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "Replay was not requested; identity/hash checks alone do not establish simulation reproducibility.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "REPRODUCIBILITY.SOURCE_SNAPSHOT",
+              "title": "Original executable source snapshot",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "No original executable/source snapshot is supplied or restored; a version label and current-engine replay do not prove preservation of historical code.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "No original executable/source snapshot is supplied or restored; a version label and current-engine replay do not prove preservation of historical code.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "LIMITS.LOOKAHEAD",
+              "title": "Absence of every form of look-ahead bias",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "Trace timing checks cannot prove arbitrary strategy code never accessed future information.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "Trace timing checks cannot prove arbitrary strategy code never accessed future information.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "LIMITS.SURVIVORSHIP",
+              "title": "Survivorship bias",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "No historical universe or delisting membership evidence is available.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "No historical universe or delisting membership evidence is available.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "LIMITS.INDEX_MEMBERSHIP",
+              "title": "Historical index membership bias",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "No historical index constituent records are available.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "No historical index constituent records are available.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "LIMITS.SELECTION",
+              "title": "Data snooping and strategy-selection bias",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "No complete research/selection history or selection protocol is assessed.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "No complete research/selection history or selection protocol is assessed.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "LIMITS.OVERFITTING",
+              "title": "Overfitting",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "No robustness or out-of-sample inference is performed.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "No robustness or out-of-sample inference is performed.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "LIMITS.CORPORATE_ACTION_TRUTH",
+              "title": "Historical corporate-action declarations",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "Declared none_reported splits and adjustment basis are not independently verified.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "Declared none_reported splits and adjustment basis are not independently verified.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "LIMITS.SESSION_COMPLETENESS",
+              "title": "Complete trading-session coverage",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "No authoritative reference schedule/completeness evidence is loaded.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "No authoritative reference schedule/completeness evidence is loaded.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "LIMITS.LIQUIDITY",
+              "title": "Realistic opening liquidity",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "Daily OHLCV cannot establish actual opening fills, spreads or market impact.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "Daily OHLCV cannot establish actual opening fills, spreads or market impact.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "LIMITS.SIGNIFICANCE",
+              "title": "Statistical significance",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "No significance testing or independence assessment is implemented.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "No significance testing or independence assessment is implemented.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            },
+            {
+              "rule_id": "LIMITS.ECONOMIC_EVENTS",
+              "title": "Unmodeled economic events",
+              "status": "NOT_ASSESSED",
+              "severity": null,
+              "explanation": "OHLCV and declarations cannot resolve all dividends, delistings, revisions or other economic events.",
+              "evidence": [
+                {
+                  "reference": "missing_evidence_or_capability",
+                  "observed": "OHLCV and declarations cannot resolve all dividends, delistings, revisions or other economic events.",
+                  "expected": null,
+                  "order_id": null,
+                  "fill_index": null,
+                  "session": null
+                }
+              ],
+              "suggested_action": null
+            }
+          ]
+        }
+      }
+    ],
+    "comparisons": [
+      {
+        "kind": "benchmark",
+        "run_id": "run_001",
+        "reference_run_id": "run_001",
+        "final_equity_difference": "0.00",
+        "cumulative_return_difference": {
+          "value": 0.0,
+          "reason": null
+        },
+        "maximum_drawdown_difference": {
+          "value": 0.0,
+          "reason": null
+        }
+      }
+    ],
+    "workload": {
+      "run_count": 1,
+      "evaluated_bars": 9,
+      "warmup_bars": 0
+    },
+    "reproducibility": {
+      "source_snapshot_sha256": "44bb44075e15045d513f2fe1125fd3da8670bf35577f4dfeefa20d027ada65bb",
+      "source_files": [
+        [
+          "__init__.py",
+          "e9c0fc576cd81195b12fd5e8f215fc0894776588e79c361a1ce0081d6961a2bf"
+        ],
+        [
+          "analytics/__init__.py",
+          "d983601ae3ad44da572b7d5b5a850f63547fadc7ffe6742388cf6ada21490fd4"
+        ],
+        [
+          "analytics/benchmark.py",
+          "ba053009175a9eec14c3c5d17d33e49b175e4f16834e3ae18009d0174a6b3c70"
+        ],
+        [
+          "analytics/equity.py",
+          "3aee1bcbc297c3656d7f2bdfb5ab424e59189174fb3ab200fdd8c96744d21b8a"
+        ],
+        [
+          "analytics/models.py",
+          "80077fe91c9517bf5cae1445c5c04a4ecb826289e0a320df1241b8bf08456b1e"
+        ],
+        [
+          "analytics/trades.py",
+          "36850803a7b6b234809a1a086abbaa695df4ddf69a13ae974099781cbd202e75"
+        ],
+        [
+          "api/__init__.py",
+          "e132c4b91978879b233bed18b4ddced7b1345aa0f28b0a7191d46405176fb9d3"
+        ],
+        [
+          "api/__main__.py",
+          "0493409c4172e45d571724011127075fc4028b3e0b4ed6163371e76e57a4580f"
+        ],
+        [
+          "api/app.py",
+          "fa98abdfc3b68b64c6906757cfc6a085320c220af1850f1e62632c6656db990b"
+        ],
+        [
+          "api/boundary.py",
+          "bb42c599bf3925cebcd5f03c207dd593b9cdf5864793a54745dadd793458116d"
+        ],
+        [
+          "api/models.py",
+          "5e0992a73d787f52ce7e9344b577ebc47ae2659daf087f9245c6a41d2405781f"
+        ],
+        [
+          "application/__init__.py",
+          "d5cf98292eb73e3e294192aef394b11ea20ccf9e0ec99484193dbebb86717466"
+        ],
+        [
+          "application/requests.py",
+          "5000c927546b0ede6e48f1effe2cb516ba3df61b2c427598691a852f7c43d3a8"
+        ],
+        [
+          "application/service.py",
+          "0632b9097223a425ab686820e4b66b83e30a4be236a2bef9e68c00a4d2be9cf3"
+        ],
+        [
+          "audit/__init__.py",
+          "0c45c738dfdb557e3cab7b543c3933eeb4e5db36f658757e5fa9aa7d9a2804ee"
+        ],
+        [
+          "audit/accounting.py",
+          "73cc7ed694d520720b8c8f02d22361c14996381e3e692d8acea529074868a401"
+        ],
+        [
+          "audit/auditor.py",
+          "8d728f57b0e2cc15eeca13bd57a445a8cb21f49d936eac0adccf2449182393fc"
+        ],
+        [
+          "audit/models.py",
+          "7b0e6fa598714066ee953c2771e0563aeac184b5aa9eac9ff1b3b9171b70089f"
+        ],
+        [
+          "audit/provenance.py",
+          "ceaca893f070b1932871129701dffd7b7061bc80764feb4f892b520f842b7499"
+        ],
+        [
+          "audit/trace.py",
+          "298642644f87225a50bfef7209d80013204885ead98a83051990b6d2e3fceb53"
+        ],
+        [
+          "data/__init__.py",
+          "5ce1eb30fc89a4209231ac9581d3386c4b7a4e306c21d0289e5562339152de21"
+        ],
+        [
+          "data/errors.py",
+          "89d8de9a3f5e24a75465a49d2a4a26b16134bec16751244caa1b6c8c7a39b633"
+        ],
+        [
+          "data/identity.py",
+          "d9cce0d88f3b39ae84dc1be13ec8761c827a62f216f4e8af9650091c2ce4fa51"
+        ],
+        [
+          "data/loader.py",
+          "87a4b88194dacdfedd61f5094df6356f8f97cff2b0e6ad8391c648a9c8fbf145"
+        ],
+        [
+          "data/metadata.py",
+          "253ca4c24ccde7a976233741ce0c998a3a99f8038ea3c25130c841aed54c30ac"
+        ],
+        [
+          "data/models.py",
+          "575ce13071c5e0a48889618943373fd690303220263140c5e2ccca59fc039cdc"
+        ],
+        [
+          "execution/__init__.py",
+          "7993cb5eeac4a8d4a5bda7f8c96687fb2866daa1c9f163e9b58cade11939d39d"
+        ],
+        [
+          "execution/costs.py",
+          "36ed43966b00a397896b4668ac5d94a75e8d208ad03d6d328799706cdd86b066"
+        ],
+        [
+          "execution/engine.py",
+          "993f383c0a7e95ee22fc0954f312984418f446f47f852276c2e9a10fc5eebcc6"
+        ],
+        [
+          "execution/models.py",
+          "c913f7d0fec1a8b26a2956b320bbb5ad1b5ae3ec3703dcc28d5fa6f89387f7a0"
+        ],
+        [
+          "experiments/__init__.py",
+          "04a98ab4f8beb655835418e71161003cf41d1a86b33ef5f1f5d456ed550561ba"
+        ],
+        [
+          "experiments/grids.py",
+          "dbe50ebb2a83c5cb48ec890f4200b250ff440dd03616a0d5f7d7b3a459543cb2"
+        ],
+        [
+          "experiments/models.py",
+          "f138b2aaa6982de5486005320d8bd5c73b193137fc713653979db167cf5a27a6"
+        ],
+        [
+          "experiments/reproducibility.py",
+          "5c4550439ceb217985a85c770e506fda768e65546fbd014ede7723ce8d96f343"
+        ],
+        [
+          "experiments/runner.py",
+          "cd3e15ea09601661f2b4042c41cde9f5c998a8fa1c58ed211b0c05e35b9b09e4"
+        ],
+        [
+          "persistence/__init__.py",
+          "f6c317cada0f073dec272205a97af7d27ff09d599e962e9e0ddb82c9f09207a0"
+        ],
+        [
+          "persistence/codec.py",
+          "6f512ca3bffe31e8956675dca8c1099047551f18044bc772515cbe1952860042"
+        ],
+        [
+          "persistence/store.py",
+          "7bbe7eea4a0a8a5015f18143906aa9cb48f928da582cb14a701a0c840ae6acf5"
+        ],
+        [
+          "strategies/__init__.py",
+          "0a9786923cf50e04055f00fef2a6f55814cb8d0b9ef6d91bec379aea24226c36"
+        ],
+        [
+          "strategies/models.py",
+          "f02e879025d41a15992faf021801d4a624953f5d90000754074b3ca016f1c932"
+        ],
+        [
+          "strategies/rules.py",
+          "a17333d1564844256401f0167843659d3720dac500170d7b8227a6833f54d814"
+        ]
+      ],
+      "python_version": "3.15.0",
+      "explanation": "SHA-256 of sorted package-relative Python source paths/content hashes; no Git clean/revision claim. Retain these source bytes and original market inputs to reproduce; a fingerprint alone cannot restore them."
+    },
+    "assumptions": [
+      "Existing next-open, Decimal, integer, long-only, price-return/corporate-action conventions apply; no forced final sale.",
+      "Invalid configurations or any execution/analysis/audit failure abort the request; no partial result is returned.",
+      "At most 100 unique strategy configurations including buy-and-hold references; at most 1,000,000 evaluated plus warm-up bars across all runs.",
+      "Runs are synchronous. Each planned reference executes once and is referenced by ID; there is no result cache or unbudgeted audit replay.",
+      "Costs can change affordable quantity and trade paths; monotonic performance with increasing costs is not assumed.",
+      "Different-length subperiod returns are labeled by their own windows and are not a common quality ranking.",
+      "Audit warnings and NOT_ASSESSED risks remain; experiments do not prove generalization, significance or future profitability."
+    ]
+  },
+  "implementation": {
+    "payload_version": 1,
+    "request_version": 1,
+    "engine_version": "1.3.0",
+    "importer_version": "1.0.0",
+    "audit_version": "1.1.0",
+    "experiment_version": "1.0.0",
+    "source": {
+      "source_snapshot_sha256": "44bb44075e15045d513f2fe1125fd3da8670bf35577f4dfeefa20d027ada65bb",
+      "source_files": [
+        [
+          "__init__.py",
+          "e9c0fc576cd81195b12fd5e8f215fc0894776588e79c361a1ce0081d6961a2bf"
+        ],
+        [
+          "analytics/__init__.py",
+          "d983601ae3ad44da572b7d5b5a850f63547fadc7ffe6742388cf6ada21490fd4"
+        ],
+        [
+          "analytics/benchmark.py",
+          "ba053009175a9eec14c3c5d17d33e49b175e4f16834e3ae18009d0174a6b3c70"
+        ],
+        [
+          "analytics/equity.py",
+          "3aee1bcbc297c3656d7f2bdfb5ab424e59189174fb3ab200fdd8c96744d21b8a"
+        ],
+        [
+          "analytics/models.py",
+          "80077fe91c9517bf5cae1445c5c04a4ecb826289e0a320df1241b8bf08456b1e"
+        ],
+        [
+          "analytics/trades.py",
+          "36850803a7b6b234809a1a086abbaa695df4ddf69a13ae974099781cbd202e75"
+        ],
+        [
+          "api/__init__.py",
+          "e132c4b91978879b233bed18b4ddced7b1345aa0f28b0a7191d46405176fb9d3"
+        ],
+        [
+          "api/__main__.py",
+          "0493409c4172e45d571724011127075fc4028b3e0b4ed6163371e76e57a4580f"
+        ],
+        [
+          "api/app.py",
+          "fa98abdfc3b68b64c6906757cfc6a085320c220af1850f1e62632c6656db990b"
+        ],
+        [
+          "api/boundary.py",
+          "bb42c599bf3925cebcd5f03c207dd593b9cdf5864793a54745dadd793458116d"
+        ],
+        [
+          "api/models.py",
+          "5e0992a73d787f52ce7e9344b577ebc47ae2659daf087f9245c6a41d2405781f"
+        ],
+        [
+          "application/__init__.py",
+          "d5cf98292eb73e3e294192aef394b11ea20ccf9e0ec99484193dbebb86717466"
+        ],
+        [
+          "application/requests.py",
+          "5000c927546b0ede6e48f1effe2cb516ba3df61b2c427598691a852f7c43d3a8"
+        ],
+        [
+          "application/service.py",
+          "0632b9097223a425ab686820e4b66b83e30a4be236a2bef9e68c00a4d2be9cf3"
+        ],
+        [
+          "audit/__init__.py",
+          "0c45c738dfdb557e3cab7b543c3933eeb4e5db36f658757e5fa9aa7d9a2804ee"
+        ],
+        [
+          "audit/accounting.py",
+          "73cc7ed694d520720b8c8f02d22361c14996381e3e692d8acea529074868a401"
+        ],
+        [
+          "audit/auditor.py",
+          "8d728f57b0e2cc15eeca13bd57a445a8cb21f49d936eac0adccf2449182393fc"
+        ],
+        [
+          "audit/models.py",
+          "7b0e6fa598714066ee953c2771e0563aeac184b5aa9eac9ff1b3b9171b70089f"
+        ],
+        [
+          "audit/provenance.py",
+          "ceaca893f070b1932871129701dffd7b7061bc80764feb4f892b520f842b7499"
+        ],
+        [
+          "audit/trace.py",
+          "298642644f87225a50bfef7209d80013204885ead98a83051990b6d2e3fceb53"
+        ],
+        [
+          "data/__init__.py",
+          "5ce1eb30fc89a4209231ac9581d3386c4b7a4e306c21d0289e5562339152de21"
+        ],
+        [
+          "data/errors.py",
+          "89d8de9a3f5e24a75465a49d2a4a26b16134bec16751244caa1b6c8c7a39b633"
+        ],
+        [
+          "data/identity.py",
+          "d9cce0d88f3b39ae84dc1be13ec8761c827a62f216f4e8af9650091c2ce4fa51"
+        ],
+        [
+          "data/loader.py",
+          "87a4b88194dacdfedd61f5094df6356f8f97cff2b0e6ad8391c648a9c8fbf145"
+        ],
+        [
+          "data/metadata.py",
+          "253ca4c24ccde7a976233741ce0c998a3a99f8038ea3c25130c841aed54c30ac"
+        ],
+        [
+          "data/models.py",
+          "575ce13071c5e0a48889618943373fd690303220263140c5e2ccca59fc039cdc"
+        ],
+        [
+          "execution/__init__.py",
+          "7993cb5eeac4a8d4a5bda7f8c96687fb2866daa1c9f163e9b58cade11939d39d"
+        ],
+        [
+          "execution/costs.py",
+          "36ed43966b00a397896b4668ac5d94a75e8d208ad03d6d328799706cdd86b066"
+        ],
+        [
+          "execution/engine.py",
+          "993f383c0a7e95ee22fc0954f312984418f446f47f852276c2e9a10fc5eebcc6"
+        ],
+        [
+          "execution/models.py",
+          "c913f7d0fec1a8b26a2956b320bbb5ad1b5ae3ec3703dcc28d5fa6f89387f7a0"
+        ],
+        [
+          "experiments/__init__.py",
+          "04a98ab4f8beb655835418e71161003cf41d1a86b33ef5f1f5d456ed550561ba"
+        ],
+        [
+          "experiments/grids.py",
+          "dbe50ebb2a83c5cb48ec890f4200b250ff440dd03616a0d5f7d7b3a459543cb2"
+        ],
+        [
+          "experiments/models.py",
+          "f138b2aaa6982de5486005320d8bd5c73b193137fc713653979db167cf5a27a6"
+        ],
+        [
+          "experiments/reproducibility.py",
+          "5c4550439ceb217985a85c770e506fda768e65546fbd014ede7723ce8d96f343"
+        ],
+        [
+          "experiments/runner.py",
+          "cd3e15ea09601661f2b4042c41cde9f5c998a8fa1c58ed211b0c05e35b9b09e4"
+        ],
+        [
+          "persistence/__init__.py",
+          "f6c317cada0f073dec272205a97af7d27ff09d599e962e9e0ddb82c9f09207a0"
+        ],
+        [
+          "persistence/codec.py",
+          "6f512ca3bffe31e8956675dca8c1099047551f18044bc772515cbe1952860042"
+        ],
+        [
+          "persistence/store.py",
+          "7bbe7eea4a0a8a5015f18143906aa9cb48f928da582cb14a701a0c840ae6acf5"
+        ],
+        [
+          "strategies/__init__.py",
+          "0a9786923cf50e04055f00fef2a6f55814cb8d0b9ef6d91bec379aea24226c36"
+        ],
+        [
+          "strategies/models.py",
+          "f02e879025d41a15992faf021801d4a624953f5d90000754074b3ca016f1c932"
+        ],
+        [
+          "strategies/rules.py",
+          "a17333d1564844256401f0167843659d3720dac500170d7b8227a6833f54d814"
+        ]
+      ],
+      "python_version": "3.15.0",
+      "explanation": "SHA-256 of sorted package-relative Python source paths/content hashes; no Git clean/revision claim. Retain these source bytes and original market inputs to reproduce; a fingerprint alone cannot restore them."
+    },
+    "sqlite_version": "3.53.4",
+    "dependencies": {
+      "fastapi": "0.162.0",
+      "pydantic": "2.14.2",
+      "starlette": "1.10.0",
+      "uvicorn": "0.54.0"
+    }
+  },
+  "result_sha256": "4c02170f8a985652ac50efb2eaaf941cff80c95e1a581cacb7010720e46b332e",
+  "created_at": "2026-11-02T14:16:04.071861+00:00"
+}

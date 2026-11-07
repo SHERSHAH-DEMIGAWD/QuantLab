@@ -1,0 +1,52 @@
+# Python environments, generated metadata, and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Frontend dependencies and generated output
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+/frontend/test-results/
+/frontend/playwright-report/
+/frontend/.vitest/
+
+# Local configuration, credentials, and temporary output
+/.release-check/
+# Local generated document exports
+/output/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+
+# Local market data and generated results; fixtures remain trackable
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3-shm
+*.sqlite3-wal
+*.db-journal
+*.sqlite-journal
+*.sqlite3-journal
+*.pem
+*.key
