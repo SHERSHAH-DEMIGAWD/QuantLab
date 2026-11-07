@@ -1,5 +1,69 @@
 # GitHub publication readiness
 
+## Publication completed, 2026-11-07
+
+**PUBLISHED with the user's explicit authorization:**
+[SHERSHAH-DEMIGAWD/QuantLab](https://github.com/SHERSHAH-DEMIGAWD/QuantLab),
+public visibility, default branch `main`. Initial reviewed commit: `2b2b94e`.
+Local `codex/publication` tracks `origin/main`. Only that reviewed history was
+pushed; no force, mirror, all-ref push or history rewrite. Commits use the
+verified account's public GitHub noreply identity. No license was invented and
+no application was deployed.
+
+Immediately before committing, both review scripts passed for 140 candidates.
+The committed ordinary history also passed: no private files, detected credentials
+or owner paths. Remote GitHub tree inspection returned 140 files, no truncated
+tree and no forbidden paths. A fresh remote clone matched every initial file's
+SHA-256. All 22 private IBM/MSFT validation files remain ignored locally; only
+the two invented CSV fixtures are published. Internal tool refs and generated
+PDF/environments/databases are excluded. Pattern scans remain bounded evidence.
+
+Fresh clone at local ignored `.release-check/github-publication/clone-verified-20261107`:
+
+| Executed check | Result |
+| --- | --- |
+| Isolated venv / editable `.[test]` install / pip check | Succeeded; no broken requirements; no private configuration |
+| Frontend lockfile install | `npm ci --offline --no-audit --no-fund`: 110 packages |
+| Backend with private snapshot/PYTHONPATH unset | **444 passed, six private-data skips in 24.82s** |
+| Frontend unit/component suite | **45 passed in 11.14s** |
+| TypeScript/Vite production build | Passed |
+| Actual API/SQLite browser workflows | **Four passed in 25.4s**, including build |
+| Source/test/script/dependency baseline | 92 pre-existing files unchanged |
+
+The sandbox's blocked proxy initially made GitHub auth appear invalid; external
+network verification confirmed the existing signed-in account without requesting
+secrets. Sandbox ensurepip also failed; an approved external retry completed the
+fresh environment. These are verification-environment failures, not concealed
+application failures. No full suites were started before dependency installation
+completed. Tests used synthetic inputs and did not fetch historical observations.
+
+Key publication commands, from the root:
+
+```powershell
+gh api user --jq '{login: .login, id: .id}'
+git switch -c codex/publication
+git add -- .gitattributes .gitignore .cursor AGENTS.md README.md pyproject.toml backend frontend scripts docs data/raw/.gitkeep data/processed/.gitkeep
+git diff --cached --check
+.\.venv\Scripts\python.exe scripts/check_publication.py
+.\.venv\Scripts\python.exe scripts/verify_repository.py
+git -c user.name=SHERSHAH-DEMIGAWD -c user.email=178127292+SHERSHAH-DEMIGAWD@users.noreply.github.com commit -m 'Initial QuantLab release'
+gh repo create SHERSHAH-DEMIGAWD/QuantLab --public --description 'Local strategy research with deterministic daily backtesting, integrity audits, robustness experiments, FastAPI, SQLite, and React.' --source . --remote origin
+git -c credential.helper= -c 'credential.helper=!gh auth git-credential' push -u origin HEAD:refs/heads/main
+git clone --single-branch --branch main https://github.com/SHERSHAH-DEMIGAWD/QuantLab.git .release-check/github-publication/clone-verified-20261107
+```
+
+Inside the fresh clone, ran the README venv/editable install and pip check, then
+`python -m pytest -q` with `QUANTLAB_REAL_MARKET_DIR` and `PYTHONPATH` unset.
+From its `frontend`, ran the npm install above, `npm test`, `npm run build` and
+`npm run test:e2e`. A subsequent documentation-only commit records completion;
+it changes no tested application, fixture, package or script. Final status and
+questions: [Session 15](session-reports/SESSION_15_PHASE_10.md).
+
+## Original preparation record, 2026-11-03
+
+The dated findings and recommended steps below describe the earlier preparation
+session, before the later explicit publication authorization and actions above.
+
 2026-11-03 (Asia/Calcutta). **Preparation complete; suitable for a reviewed
 initial commit and an explicitly approved publication. Nothing was pushed.**
 This is packaging/safety review after completed phases 0-10 and limited real

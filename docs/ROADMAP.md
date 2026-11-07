@@ -1,6 +1,6 @@
 # Master roadmap
 
-Updated 2026-11-03 (Asia/Calcutta). These are the original 11 core phases,
+Updated 2026-11-07 (Asia/Calcutta). These are the original 11 core phases,
 numbered 0-10. All are complete within their explicitly authorized scope;
 Phase 9 used offline Path B. Session 10 completed final engineering validation
 for a local technical demonstration. Session 11 completed the separately
@@ -312,6 +312,9 @@ Stop after the handbook; owner learning is not inferred from document completion
 Session 14 completed the user's PDF-format follow-up: the full local 72-page
 edition, with content/link/layout checks; no implementation phase or application
 change. Evidence: [Session 14](session-reports/SESSION_14_PHASE_10.md).
+Session 15 completed explicitly authorized public GitHub source publication and
+fresh-clone setup/backend/frontend/browser verification. No new phase, financial
+change or hosted deployment. Evidence: [Session 15](session-reports/SESSION_15_PHASE_10.md).
 
 Target one focused session per phase. If a phase proves too large, explain why,
 record named subphases and unchanged acceptance, and report partial progress.

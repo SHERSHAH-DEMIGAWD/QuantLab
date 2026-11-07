@@ -1,9 +1,9 @@
 # Project status
 
-Updated: 2026-11-04 (Asia/Calcutta).
+Updated: 2026-11-07 (Asia/Calcutta).
 
-- **Current phase:** 10 - complete; authorized handbook PDF edition finished.
-- **Status:** COMPLETE; Session 14 PDF export and layout verification completed.
+- **Current phase:** 10 - complete; authorized GitHub source publication finished.
+- **Status:** COMPLETE; Session 15 publication and fresh-clone checks verified.
 - **Completed phases:** 0-10. Phase 9 used the validated offline alternative.
 - **Further planned phases:** none. Stop after Phase 10; no Phase 11 authorized.
 - **Readiness:** local technical demonstration; owner learning remains pending.
@@ -37,8 +37,9 @@ Session 12 prepared the public package, synthetic screenshots and read-only
 publication checks; redacted owner paths and verified a disposable source-only
 Git clone with fresh dependencies. Clone: **444 backend passed/six private skips**,
 **45 frontend passed**, **four browser workflows/build passed**. All private
-real observations remain ignored. Root still has no initial commit or remote;
-no history rewrite, GitHub creation or push. License choice remains pending.
+real observations remained ignored. At that session the root had no initial
+commit or remote; no history rewrite, GitHub creation or push occurred then.
+License choice remains pending.
 Evidence/recommended steps: [publication readiness](PUBLICATION_READINESS.md).
 
 ## Executed release evidence
@@ -76,7 +77,7 @@ their detailed semantics.
 Owned QA ports 8018/5178/8019/5179 stopped. Environments, builds, databases and
 browser artifacts are ignored; raw/processed placeholders remain empty. Small
 synthetic fixtures and measured benchmark JSON are intentionally retained.
-No staging/commit/branch/remote/tag/deployment changes; no committed baseline.
+Those earlier release sessions preceded the authorized GitHub publication below.
 
 Implementation/verification are AI-assisted. Independent explanation/recreation
 and honest resume contribution review are pending. See the focused
@@ -104,11 +105,27 @@ All 1,379 source text blocks/cells checked against extracted PDF text; 72 pages
 rendered for review. The Markdown source remains unchanged. Generated exports
 are ignored, so public source/setup does not depend on the local PDF or tools.
 
-Latest report: [Session 14 / handbook PDF](session-reports/SESSION_14_PHASE_10.md).
+## GitHub publication
+
+The user explicitly authorized publication on 2026-11-07. Public repository:
+[SHERSHAH-DEMIGAWD/QuantLab](https://github.com/SHERSHAH-DEMIGAWD/QuantLab),
+default branch `main`; local publication branch `codex/publication` tracks it.
+Only the reviewed ordinary branch was pushed. Internal tool refs, all 22 private
+real-validation files, environments, databases and generated PDF remain local.
+No license was added; no hosted application was deployed.
+
+A fresh GitHub clone matched all 140 initial published files byte-for-byte and
+installed declared dependencies independently. Backend: **444 passed, six private
+skips in 24.82s**. Frontend: **45 passed in 11.14s**. Production build and **four
+browser workflows passed in 25.4s**. Final publication documentation is the only
+subsequent change; financial/application/test/dependency files remain unchanged.
+Publication findings/commands: [publication record](PUBLICATION_READINESS.md).
+
+Latest report: [Session 15 / GitHub publication](session-reports/SESSION_15_PHASE_10.md).
 
 ## Stop condition
 
 The original development roadmap is complete. No next phase is proposed or
 implemented. Owner study can continue independently; future changes require a
-new explicit task. Stop after this requested handbook task; GitHub creation/push
-requires explicit approval. No provider integration or deployment starts automatically.
+new explicit task. Stop after the authorized source publication. No provider
+integration, feature development or hosted deployment starts automatically.

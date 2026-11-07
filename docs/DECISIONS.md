@@ -807,6 +807,22 @@ print edition using bundled document tooling, preserve handbook content and
 application dependencies, and keep generated local exports under ignored
 `output/`. This adds no product feature, financial rule or development phase.
 
+## D17 - Authorized GitHub publication, 2026-11-07
+
+**ESTABLISHED by the user's explicit request to publish under the supplied
+GitHub account.** Publish the reviewed project as public repository
+[SHERSHAH-DEMIGAWD/QuantLab](https://github.com/SHERSHAH-DEMIGAWD/QuantLab).
+Use an initial ordinary commit and push only its reviewed branch to remote
+`main`; do not transfer private internal refs or rewrite history. The local
+publication branch is `codex/publication`. Use the verified account's public
+GitHub noreply identity for commits, not a private local email address.
+
+Keep credentials, environments, databases, IBM/MSFT observations/evidence and
+generated local exports excluded. Leave the license unselected rather than
+inventing permissions. Verify remote contents and a fresh GitHub clone with
+public setup/tests. This is source publication, not hosted deployment or a new
+development phase. No financial/application/test/dependency change is authorized.
+
 ## Review gates and unresolved questions
 
 | Gate | Review required | Consequence of leaving it unresolved |
